@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <style>
+        body {
+            background-image: url(imgfundo.jpg); /*add img no fundos*/
+            background-repeat: no-repeat; /*para a imagem não se repetir*/
+            background-size:cover;
+            background-attachment: fixed; /*para a imagem ficar fixada na tela*/
+        }
+
+        div{
+            
+            justify-content: center;
+            text-align: center;
+            
+        }
+       
+        /*retirar a marcação dos itens*/
+        ul{
+            margin: 0;
+            padding:10px;
+            border: 8px ;
+            border-style: double;
+            border-color:  #986eb16b;
+            background-color:  #b690cf;
+            
+            
+            
+        }
+         
+        li {
+            list-style: none; 
+            margin: 10px;
+            display: inline;
+            
+            }
+           
+        li a{
+            
+            background-color: #b690cf;
+            color:  #382f50;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: none;
+            
+            
+         }
+         /*estilizando o formulario*/
+         #envio{
+            text-align: center;
+            color: #382f50;
+         }
+
+         table{
+            display:grid;
+            place-content: center;
+            height: 450px;
+            color: #382f50;
+            
+         }
+
+         #botao{
+            border: 2px solid #9985d6;
+            box-shadow: 2px 2px 2px rgb(154, 110, 184);
+            color: #382f50;
+            width: 70px;
+            
+        }
+
+         
+         #mens, #email, #nome {
+            border: 2px solid #9985d6;
+            box-shadow: 2px 2px 2px rgb(154, 110, 184);
+            color: #382f50;
+            
+         }
+
+         
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <!-- criando os links -->
+      <li>
+          <a href="index.html">Inicial</a>
+      </li>
+      <li> 
+          <a href="sobremim.html">sobre mim</a> 
+      </li>
+      <li>
+          <a href="formacaoeducacional.html">formação/experiências</a>
+      </li>
+      <li>
+          <a href="portfolio.html">portfólio</a> 
+      </li>
+      <li>
+          <a href="contato.html">Contatos</a>
+      </li>
+  </ul>
+    </div>
+
+    <br> <br> <br>
+<!--criando um formulario-->
+    <h1 id="envio">Me envie uma mensagem!</h1>
+
+    <form action="" method="">
+        <table >
+            <tr>
+                <th><label for="nome">Nome:</label></th>
+                <td><input type="text" name="nome" id="nome"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <th><label for="msg">Digite a sua mensagem:</label></th>
+                <td><textarea id="mens" name="msg" rows="5" cols="40">Digite sua mensagem</textarea></td>
+            </tr>
+            <tr>
+                <td><button id="botao"> Enviar </button></td>
+            </tr>
+        </table>
+    </form>
+
+    
+    
+</body>
+</html>
